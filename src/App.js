@@ -3,7 +3,7 @@ import React from 'react'
 import textLogo from './assets/beevent_texto.png'
 import splash1 from './assets/undraw_modern_life1.png'
 
-import featureInvites from './assets/feature_invites4.png'
+import featureInvites from './assets/feature_invites.png'
 import featureCheckin from './assets/feature_checkin.png'
 import featureAgenda from './assets/feature_agenda2.png'
 import featureNotifications from './assets/feature_notifications.png'
@@ -82,7 +82,7 @@ function App() {
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">
                     <a href={callToActionHref} target="blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 md:py-4 md:text-lg md:px-10">
-                      Baixar o app
+                      Baixe o app
                     </a>
                   </div>
                   <div class="mt-3 sm:mt-0 sm:ml-3">
@@ -160,14 +160,12 @@ function App() {
             </div>
             <div class="text-center sm:text-left lg:mt-12">
               <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Convites inteligente
+                Convites inteligentes
               </p>
               <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Escolha o atores e mande um convite para eles, com apenas o número de celular. 
+                Escolha os atores e mande um <b>convite personalizado</b> para cada um, com sua função e cache.
                 <br /><br />
-                Vamos <b>te avisar</b> caso algum
-                ator recuse o convite.
-                Ah, e os convites <b>expiram</b> em 24 horas.
+                Vamos <b>te avisar</b> caso alguém recuse o convite, assim você tem <b>tempo</b> para achar novos atores.
               </p>
             </div>
           </div>
@@ -308,7 +306,7 @@ function App() {
           <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
             <div class="inline-flex rounded-md shadow">
               <a href={callToActionHref} target="blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700">
-                Baixar o app
+                Baixe o app
               </a>
             </div>
             {/* <div class="ml-3 inline-flex rounded-md shadow">
