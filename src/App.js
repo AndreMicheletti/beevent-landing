@@ -3,10 +3,15 @@ import React from 'react'
 import textLogo from './assets/beevent_texto.png'
 import splash1 from './assets/undraw_modern_life1.png'
 
-import featureInvites from './assets/feature_invites.png'
+import featureInvites from './assets/feature_invites4.png'
 import featureCheckin from './assets/feature_checkin.png'
-import featureAgenda from './assets/feature_agenda.png'
+import featureAgenda from './assets/feature_agenda2.png'
 import featureNotifications from './assets/feature_notifications.png'
+import featureOneApp from './assets/feature_one_app.png'
+
+
+const callToActionHref = 'https://play.google.com/store/apps/details?id=com.beevent.producer_app';
+
 
 function App() {
   return (
@@ -76,13 +81,13 @@ function App() {
                 </p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">
-                    <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 md:py-4 md:text-lg md:px-10">
-                      Get started
+                    <a href={callToActionHref} target="blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 md:py-4 md:text-lg md:px-10">
+                      Baixar o app
                     </a>
                   </div>
                   <div class="mt-3 sm:mt-0 sm:ml-3">
-                    <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yellow-700 bg-yellow-100 hover:bg-yellow-200 md:py-4 md:text-lg md:px-10">
-                      Live demo
+                    <a href="#features" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yellow-700 bg-yellow-100 hover:bg-yellow-200 md:py-4 md:text-lg md:px-10">
+                      Saiba mais
                     </a>
                   </div>
                 </div>
@@ -99,9 +104,116 @@ function App() {
       <div class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
-            <h2 class="text-base text-yellow-600 font-semibold tracking-wide uppercase">Transactions</h2>
+            {/* <h2 class="text-base text-yellow-600 font-semibold tracking-wide uppercase">Para quem</h2> */}
             <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              A better way to send money
+              Para produtores de eventos independentes
+            </p>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              
+              <span class="text-yellow-600"><b>Beevent</b></span> é um aplicativo de gerenciamento de eventos que irá te
+              ajudar a <b>economizar tempo</b> no dia-a-dia e <b>ter controle</b> sobre suas produções e seu elenco.
+              <br /><br />
+              Entenda como o <span class="text-yellow-600"><b>Beevent</b></span> faz isso
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Features with UnDraw section */}
+      <div id="features" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <img src={featureAgenda} />
+            </div>
+            <div class="text-center sm:text-left lg:mt-12">
+              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Veja suas prioridades
+              </p>
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Todos os seus eventos <b>organizados</b> em uma visualização poderosa.
+                <br /><br />
+                Tenha mais <b>controle</b> e veja as ações <b>urgentes</b> que você precisa tomar.              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="sm:col-start-2">
+              <img src={featureCheckin} />
+            </div>         
+            <div class="sm:col-start-1 sm:row-start-1 text-center sm:text-right lg:mt-12">
+              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Confirmação no local
+              </p>
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Seus atores devem <b>confirmar presença</b> no local até 1 hora antes do evento, usando o aplicativo.
+                <br /><br />
+                É fácil e rápido, e você <b>não precisa</b> ligar para cada um toda vez.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <img src={featureInvites} />
+            </div>
+            <div class="text-center sm:text-left lg:mt-12">
+              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Convites inteligente
+              </p>
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Escolha o atores e mande um convite para eles, com apenas o número de celular. 
+                <br /><br />
+                Vamos <b>te avisar</b> caso algum
+                ator recuse o convite.
+                Ah, e os convites <b>expiram</b> em 24 horas.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="sm:col-start-2">
+              <img src={featureNotifications} />
+            </div>
+            <div class="sm:col-start-1 sm:row-start-1 text-center sm:text-right lg:mt-12">
+              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Alertas com notificação
+              </p>
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Você recebe <b>alertas</b> para qualquer ação que precisa tomar, somos seu assistente pessoal.
+                <br /><br />
+                Ah, e seus <b>atores também recebem lembretes</b>.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <img src={featureOneApp} />
+            </div>
+            <div class="text-center sm:text-left lg:mt-12">
+              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Tudo em um só app
+              </p>
+              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Uma ferramenta para que <b>você e seus atores</b> tenham mais controle e segurança.
+                <br /><br />
+                Feito e pensado para <b>você</b>, produtor de eventos.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* How to Start Section */}
+      <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="lg:text-center">
+            <h2 class="text-base text-yellow-600 font-semibold tracking-wide uppercase">Vantagens</h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Entenda como isso pode impulsionar seu negócio
             </p>
             <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
@@ -186,87 +298,24 @@ function App() {
         </div>
       </div>
 
-      {/* Features with UnDraw section */}
-      <div class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <img src={featureInvites} />
-            </div>
-            <div class="text-center sm:text-left lg:mt-12">
-              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Convites inteligente
-              </p>
-              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Monte, organize e acompanhe suas produções de eventos. Tudo em um só lugar.
-              </p>
-            </div>
-          </div>
-
-          
-          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div class="sm:col-start-2">
-              <img src={featureCheckin} />
-            </div>         
-            <div class="sm:col-start-1 sm:row-start-1 text-center sm:text-right lg:mt-12">
-              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Confirmação no local
-              </p>
-              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Monte, organize e acompanhe suas produções de eventos. Tudo em um só lugar.
-              </p>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <img src={featureAgenda} />
-            </div>
-            <div class="text-center sm:text-left lg:mt-12">
-              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Veja suas prioridades
-              </p>
-              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Monte, organize e acompanhe suas produções de eventos. Tudo em um só lugar.
-              </p>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div class="sm:col-start-2">
-              <img src={featureNotifications} />
-            </div>
-            <div class="sm:col-start-1 sm:row-start-1 text-center sm:text-right lg:mt-12">
-              <p class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Alertas com notificação
-              </p>
-              <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Monte, organize e acompanhe suas produções de eventos. Tudo em um só lugar.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Call to Action section */}
       <div class="bg-gray-50">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span class="block">Ready to dive in?</span>
-            <span class="block text-yellow-600">Start your free trial today.</span>
+            <span class="block">Impulsione seus negócios</span>
+            <span class="block text-yellow-600">Baixe o app agora.</span>
           </h2>
           <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
             <div class="inline-flex rounded-md shadow">
-              <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700">
-                Get started
+              <a href={callToActionHref} target="blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700">
+                Baixar o app
               </a>
             </div>
-            <div class="ml-3 inline-flex rounded-md shadow">
+            {/* <div class="ml-3 inline-flex rounded-md shadow">
               <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-yellow-600 bg-white hover:bg-yellow-50">
-                Learn more
+                Saiba mais
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
