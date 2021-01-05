@@ -213,8 +213,13 @@ function App() {
             <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Entenda como isso pode impulsionar seu negócio
             </p>
-            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+            <p class="mt-4 max-w-5xl text-xl text-gray-500 lg:mx-auto">
+              Nós entendemos que é necessário focar nas tarefas mais importantes
+              como <b>marketing</b>, <b>relacionamento com o cliente</b>, <b>orçamentos</b> e <b>parcerias </b> 
+               para alcançar novos clientes e vender mais.
+              <br /><br />
+              Por isso, estamos aqui para te ajudar a <b>ganhar tempo</b> com tarefas não tão importantes, e
+              também a manter-se <b>organizado(a)</b> e <b>tranquilo(a)</b>.
             </p>
           </div>
 
@@ -230,7 +235,7 @@ function App() {
                 </div>
                 <div class="ml-4">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                    Competitive exchange rates
+                    Ganhe mais tempo
                   </dt>
                   <dd class="mt-2 text-base text-gray-500">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
@@ -248,7 +253,7 @@ function App() {
                 </div>
                 <div class="ml-4">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                    No hidden fees
+                    Resolva o necessário
                   </dt>
                   <dd class="mt-2 text-base text-gray-500">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.

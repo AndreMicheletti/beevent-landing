@@ -8,6 +8,8 @@ Landing page pra converter a rapaziada pro Beevent App
 
 ### Deployment
 
+Deployado: [na interwebs](https://beevent-beta-1596467464230.rj.r.appspot.com)
+
 Atualmente deployado no Google App Engine seguindi [este Medium post](https://medium.com/javascript-in-plain-english/quickly-deploy-your-react-app-on-googles-app-engine-6bb97480cc9c)
 
 Na conta do Beevent
