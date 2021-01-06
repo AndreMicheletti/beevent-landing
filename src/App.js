@@ -9,6 +9,10 @@ import featureAgenda from './assets/feature_agenda2.png'
 import featureNotifications from './assets/feature_notifications.png'
 import featureOneApp from './assets/feature_one_app.png'
 
+import screenshotInvite from './assets/screenshots/screenshot_9.jpeg'
+import screenshotDetails from './assets/screenshots/screenshot_15.jpeg'
+import screenshotWarnings from './assets/screenshots/screenshot_11.jpeg'
+import screenshotCheckin from './assets/screenshots/screenshot_14.jpeg'
 
 const callToActionHref = 'https://play.google.com/store/apps/details?id=com.beevent.producer_app';
 
@@ -30,7 +34,7 @@ function App() {
                   <div class="flex items-center justify-center w-full md:w-auto">
                     <a href="#">
                       <span class="sr-only">Beevent</span>
-                      <img class="h-40 w-auto sm:h-30" src={textLogo} />
+                      <img class="mt-10 h-40 w-auto sm:h-30" src={textLogo} />
                     </a>
                   </div>
                 </div>
@@ -205,7 +209,7 @@ function App() {
         </div>
       </div>
 
-      {/* How to Start Section */}
+      {/* Vantagens Section */}
       <div class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
@@ -235,10 +239,10 @@ function App() {
                 </div>
                 <div class="ml-4">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                    Ganhe mais tempo
+                  Informação sempre disponível
                   </dt>
-                  <dd class="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  <dd class="text-base text-gray-500">
+                    na palma da sua mão, tudo o que você precisa saber de suas produções.
                   </dd>
                 </div>
               </div>
@@ -253,10 +257,10 @@ function App() {
                 </div>
                 <div class="ml-4">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                    Resolva o necessário
+                    Processo bem organizado
                   </dt>
-                  <dd class="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  <dd class="text-base text-gray-500">
+                    te ajuda a saber exatamente onde cada evento está em seu "ciclo de vida".
                   </dd>
                 </div>
               </div>
@@ -271,10 +275,10 @@ function App() {
                 </div>
                 <div class="ml-4">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                    Transfers are instant
+                    Resolva as pendências
                   </dt>
-                  <dd class="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  <dd class="text-base text-gray-500">
+                    e não perca tempo tentando lembrar o que precisa ser feito.
                   </dd>
                 </div>
               </div>
@@ -289,15 +293,54 @@ function App() {
                 </div>
                 <div class="ml-4">
                   <dt class="text-lg leading-6 font-medium text-gray-900">
-                    Mobile notifications
+                    Evite comunicação desnecessária
                   </dt>
-                  <dd class="mt-2 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                  <dd class="text-base text-gray-500">
+                    quando somente alguns toques podem resolver.
                   </dd>
                 </div>
               </div>
             </dl>
           </div>
+        </div>
+      </div>
+
+      {/* Screenshots Section */}
+      <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="grid grid-rows-4 sm:grid-cols-4 sm:grid-rows-1 gap-4">
+
+            <div class="w-70">
+              <img src={screenshotDetails} />
+              <dt class="mt-3 mb-6 sm:mt-6 text-center text-lg leading-6 font-medium text-gray-900">
+                Visão geral de eventos
+              </dt>
+            </div>
+
+            <div class="w-70">
+              <img src={screenshotWarnings} />
+              <dt class="mt-3 mb-6 sm:mt-6 text-center text-lg leading-6 font-medium text-gray-900">
+                Avisos de pendência
+              </dt>
+            </div>
+
+            <div class="w-70">
+              <img src={screenshotCheckin} />
+              <dt class="mt-3 mb-6 sm:mt-6 text-center text-lg leading-6 font-medium text-gray-900">
+                Acompanhamento de checkin
+              </dt>
+            </div>
+            
+            <div class="w-70">
+              <img src={screenshotInvite} />
+              <dt class="mt-3 mb-6 sm:mt-6 text-center text-lg leading-6 font-medium text-gray-900">
+                Convite para o ator
+              </dt>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
