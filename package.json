@@ -2,6 +2,7 @@
   "name": "beevent-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andremicheletti.github.io/beevent-landing",
   "dependencies": {
     "@craco/craco": "^6.0.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
